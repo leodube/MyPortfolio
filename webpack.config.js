@@ -1,6 +1,9 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+//const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -16,7 +19,32 @@ module.exports = {
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader"]
-      }
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
+        test: /\.(scss)$/,
+        use: [
+          "style-loader",
+          "css-loader", 
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: function () {
+                  return [
+                    require('precss'),
+                    require('autoprefixer')
+                  ];
+                }
+              }
+            }
+          },
+          "sass-loader",
+        ]
+      },
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
@@ -26,14 +54,24 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
+    compress: true,
     port: 3000,
-    publicPath: "/dist/",
     hotOnly: true
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new webpack.HotModuleReplacementPlugin(),
+    new ImageMinimizerPlugin({
+      minimizerOptions: {
+        plugins: [
+          ['mozjpeg', {quality:15}]
+        ]
+      },
+    }),
+    // new FaviconsWebpackPlugin({
+    //   logo: 'public/favicon.svg',
+    // }),
     new HtmlWebpackPlugin({
-      title:"Custom Title",
       template:"public/index.html",
     })
   ]
