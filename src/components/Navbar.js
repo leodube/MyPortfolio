@@ -7,8 +7,8 @@ const Navbar = () => {
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="navbar navbar-expand-md sticky-top navbar-light border-bottom pb-1 pt-2">
-      <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-expand-md sticky-top navbar-light border-bottom py-0 mb-2 mt-2">
+      <a className="navbar-brand pt-0" href="#">
         <img src={brandLogo} width="35" height="35" alt=""></img>
       </a>
       <button
