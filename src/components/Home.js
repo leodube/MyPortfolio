@@ -19,23 +19,33 @@ const Home = () => {
         <h4 className="text-center text-muted font-weight-light">
           Computer Engineer and Aspiring Adventurer
         </h4>
-        <p className="text-center text-muted mt-4">Something else here</p>
+        <p className="text-center text-muted mt-4">I do full stack development, responsive web design, and more...</p>
         <div className="row pt-3 justify-content-center">
-          <div className="col-lg-4">
-            <button type="button" className="btn btn-light btn-lg btn-block">
+          <div className="col-lg-4 mb-1">
+            <a
+              href="https://github.com/leodube"
+              target="_blank"
+              role="button"
+              className="btn btn-light btn-lg btn-block"
+            >
               <span className="icon mr-3">
                 <img src={githubIcon} height="35" width="35" alt=""></img>
               </span>
               <span className="pt-1">Code</span>
-            </button>
+            </a>
           </div>
-          <div className="col-lg-4">
-            <button type="button" className="btn btn-light btn-lg btn-block">
+          <div className="col-lg-4 mb-1">
+            <a
+              href="https://www.linkedin.com/in/leo-dube/"
+              target="_blank"
+              role="button"
+              className="btn btn-light btn-lg btn-block"
+            >
               <span className="icon mr-3">
                 <img src={linkedinIcon} height="35" width="35" alt=""></img>
               </span>
               <span className="pt-1">LinkedIn</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>

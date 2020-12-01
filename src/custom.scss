@@ -1,7 +1,11 @@
 // button themes
-button.btn-light {
+a.btn-light {
   background-color: white;
   border: white;
+}
+
+a.btn-light:focus {
+  background-color: white;
 }
 
 // navbar themes
