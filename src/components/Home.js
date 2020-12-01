@@ -21,20 +21,20 @@ const Home = () => {
         </h4>
         <p className="text-center text-muted mt-4">Something else here</p>
         <div className="row pt-3 justify-content-center">
-          <div className="col-3">
+          <div className="col-lg-4">
             <button type="button" className="btn btn-light btn-lg btn-block">
               <span className="icon mr-3">
                 <img src={githubIcon} height="35" width="35" alt=""></img>
               </span>
-              <span className="icon-text pt-1">Code</span>
+              <span className="pt-1">Code</span>
             </button>
           </div>
-          <div className="col-3">
+          <div className="col-lg-4">
             <button type="button" className="btn btn-light btn-lg btn-block">
               <span className="icon mr-3">
                 <img src={linkedinIcon} height="35" width="35" alt=""></img>
               </span>
-              <span className="icon-text pt-1">LinkedIn</span>
+              <span className="pt-1">LinkedIn</span>
             </button>
           </div>
         </div>
