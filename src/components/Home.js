@@ -1,5 +1,7 @@
 import React from "react";
 import profilePic from "/public/me.jpeg";
+import githubIcon from "/public/github.svg";
+import linkedinIcon from "/public/linkedin.svg";
 
 const Home = () => {
   return (
@@ -18,6 +20,24 @@ const Home = () => {
           Computer Engineer and Aspiring Adventurer
         </h4>
         <p className="text-center text-muted mt-4">Something else here</p>
+        <div className="row pt-3 justify-content-center">
+          <div className="col-3">
+            <button type="button" className="btn btn-light btn-lg btn-block">
+              <span className="icon mr-3">
+                <img src={githubIcon} height="35" width="35" alt=""></img>
+              </span>
+              <span className="icon-text pt-1">Code</span>
+            </button>
+          </div>
+          <div className="col-3">
+            <button type="button" className="btn btn-light btn-lg btn-block">
+              <span className="icon mr-3">
+                <img src={linkedinIcon} height="35" width="35" alt=""></img>
+              </span>
+              <span className="icon-text pt-1">LinkedIn</span>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
