@@ -1,22 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import brandLogo from "/public/brand.svg";
 
 const Navbar = () => {
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
+
   return (
     <nav className="navbar navbar-expand-md sticky-top navbar-light border-bottom pb-1 pt-2">
       <a className="navbar-brand" href="#">
         <img src={brandLogo} width="35" height="35" alt=""></img>
       </a>
       <button
-        className="navbar-toggler ml-auto"
+        className="navbar-toggler ml-auto collapsed"
         type="button"
         data-toggle="collapse"
         data-target="#navbar"
+        aria-controls="navbar" 
+        aria-expanded={!isNavCollapsed ? true : false} 
+        aria-label="Toggle navigation"
+        onClick={handleNavCollapse}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbar">
+      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item px-3">
             <Link to="/" className="nav-link">

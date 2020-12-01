@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-//const FaviconsWebpackPlugin = require('favicons-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -68,11 +67,9 @@ module.exports = {
         ]
       },
     }),
-    // new FaviconsWebpackPlugin({
-    //   logo: 'public/favicon.svg',
-    // }),
     new HtmlWebpackPlugin({
       template:"public/index.html",
+      favicon: "public/favicon.png",
     })
   ]
 };
