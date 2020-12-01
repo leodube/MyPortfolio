@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
@@ -70,6 +71,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:"public/index.html",
       favicon: "public/favicon.png",
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "public/_redirects", to: "" }
+      ]
     })
   ]
 };
