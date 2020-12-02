@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import brandLogo from "/public/brand.svg";
+import brandLogo from "/public/images/brand.svg";
 
 const Navbar = () => {
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
@@ -8,11 +8,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-md sticky-top navbar-light border-bottom py-0 mb-2 mt-2">
-      <a className="navbar-brand pt-0" href="#">
-        <img src={brandLogo} width="35" height="35" alt=""></img>
+      <a className="navbar-brand pt-0" href="/">
+        <img src={brandLogo} width="35" height="35" alt="Brand"></img>
       </a>
       <button
-        className="navbar-toggler ml-auto collapsed"
+        className="navbar-toggler ml-auto mb-2 collapsed"
         type="button"
         data-toggle="collapse"
         data-target="#navbar"

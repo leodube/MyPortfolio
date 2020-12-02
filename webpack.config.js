@@ -21,26 +21,16 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource",
+        loader: "file-loader",
+        options: {
+          outputPath: 'images'
+        }
       },
       {
         test: /\.(scss)$/,
         use: [
           "style-loader",
           "css-loader", 
-          {
-            loader: "postcss-loader",
-            options: {
-              postcssOptions: {
-                plugins: function () {
-                  return [
-                    require('precss'),
-                    require('autoprefixer')
-                  ];
-                }
-              }
-            }
-          },
           "sass-loader",
         ]
       },
