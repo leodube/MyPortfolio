@@ -1,8 +1,8 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -13,39 +13,35 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel-loader",
-        options: { presets: ["@babel/env"] }
+        options: { presets: ["@babel/env"] },
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         loader: "file-loader",
         options: {
-          outputPath: 'images'
-        }
+          outputPath: "images",
+        },
       },
       {
         test: /\.(scss)$/,
-        use: [
-          "style-loader",
-          "css-loader", 
-          "sass-loader",
-        ]
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
-    ]
+    ],
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
   },
   devServer: {
     contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 3000,
-    hotOnly: true
+    hotOnly: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -53,13 +49,14 @@ module.exports = {
     new ImageMinimizerPlugin({
       minimizerOptions: {
         plugins: [
-          ['mozjpeg', {quality:15}]
-        ]
+          ["mozjpeg", { quality: 15 }],
+          ["pngquant", { quality: [0.7, 0.9]}],
+        ],
       },
     }),
     new HtmlWebpackPlugin({
-      template:"public/index.html",
+      template: "public/index.html",
       favicon: "public/favicon.png",
     }),
-  ]
+  ],
 };
