@@ -38,13 +38,13 @@ const Projects = () => {
             <img className="card-img-top" src={otisImg} alt="Card image cap" />
             <div className="card-body">
               <div className="d-flex justify-content-between">
-                <h5 className="card-title">OTIS Web Application</h5>
+                <h5 className="card-title">OTIS Web App</h5>
                 <a href="#" class="btn btn-secondary ml-auto disabled">
                   Private Code
                 </a>
               </div>
               <h6 className="card-subtitle mb-2 text-muted">
-                For Resolute Forest Products
+                At Resolute Forest Products
               </h6>
               <p className="card-text">
                 An intranet-based document management system for pulp and paper mill operators. It was built using ASP.NET.
@@ -61,7 +61,7 @@ const Projects = () => {
             />
             <div className="card-body">
               <div className="d-flex justify-content-between">
-                <h5 className="card-title">StatStick iOS Application</h5>
+                <h5 className="card-title">StatStick iOS App</h5>
                 <a
                   href="https://github.com/leodube/statstick-app"
                   target="_blank"
@@ -71,7 +71,7 @@ const Projects = () => {
                 </a>
               </div>
               <h6 className="card-subtitle mb-2 text-muted">
-                Fourth Year Capstone Project
+                4th Year Capstone Project
               </h6>
               <p className="card-text">An iPad application that displays hockey stick action data from an API endpoint. It was built using Swift.</p>
             </div>
@@ -96,7 +96,7 @@ const Projects = () => {
                 </a>
               </div>
               <h6 className="card-subtitle mb-2 text-muted">
-                Fourth Year Capstone Project
+                4th Year Capstone Project
               </h6>
               <p className="card-text">A machine learning algorithm that takes raw sensor data and predicts hockey stick actions using dynamic time warping and fuzzy clustering. It was built using Python.</p>
             </div>
