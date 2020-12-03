@@ -44,7 +44,7 @@ const Projects = () => {
                 </a>
               </div>
               <h6 className="card-subtitle mb-2 text-muted">
-                At Resolute Forest Products
+                At Resolute FP
               </h6>
               <p className="card-text">
                 An intranet-based document management system for pulp and paper mill operators. It was built using ASP.NET.
