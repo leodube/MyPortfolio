@@ -17,19 +17,20 @@ const Projects = () => {
               alt="Card image cap"
             />
             <div className="card-body">
-              <div className="d-flex justify-content-between">
-                <h5 className="card-title">This website!</h5>
-                <a
-                  href="https://github.com/leodube/portfolio"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  View Code
-                </a>
-              </div>
+              <h5 className="card-title">This website!</h5>
               <p className="card-text mt-3">
-                This responsive single-page application was built using React and Bootstrap.
+                This responsive single-page application was built using React
+                and Bootstrap.
               </p>
+            </div>
+            <div className="d-flex mt-auto justify-content-center mb-3">
+              <a
+                href="https://github.com/leodube/portfolio"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                View Code
+              </a>
             </div>
           </div>
         </div>
@@ -37,18 +38,17 @@ const Projects = () => {
           <div className="card shadow-sm mb-3">
             <img className="card-img-top" src={otisImg} alt="Card image cap" />
             <div className="card-body">
-              <div className="d-flex justify-content-between">
-                <h5 className="card-title">OTIS Web App</h5>
-                <a href="#" class="btn btn-secondary ml-auto disabled">
-                  Private Code
-                </a>
-              </div>
-              <h6 className="card-subtitle mb-2 text-muted">
-                At Resolute FP
-              </h6>
+              <h5 className="card-title">OTIS Web Application</h5>
+              <h6 className="card-subtitle mb-2 text-muted">At Resolute FP</h6>
               <p className="card-text">
-                An intranet-based document management system for pulp and paper mill operators. It was built using ASP.NET.
+                An intranet-based document management system for pulp and paper
+                mill operators. Built using ASP.NET.
               </p>
+            </div>
+            <div className="d-flex mt-auto justify-content-center mb-3">
+              <a href="#" class="btn btn-secondary disabled">
+                Private Code
+              </a>
             </div>
           </div>
         </div>
@@ -60,20 +60,23 @@ const Projects = () => {
               alt="Card image cap"
             />
             <div className="card-body">
-              <div className="d-flex justify-content-between">
-                <h5 className="card-title">StatStick iOS App</h5>
-                <a
-                  href="https://github.com/leodube/statstick-app"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  View Code
-                </a>
-              </div>
+              <h5 className="card-title">StatStick iOS Application</h5>
               <h6 className="card-subtitle mb-2 text-muted">
                 4th Year Capstone Project
               </h6>
-              <p className="card-text">An iPad application that displays hockey stick action data from an API endpoint. It was built using Swift.</p>
+              <p className="card-text">
+                An iPad application that displays hockey stick action data from
+                an API endpoint. Built using Swift.
+              </p>
+            </div>
+            <div className="d-flex mt-auto justify-content-center mb-3">
+              <a
+                href="https://github.com/leodube/statstick-app"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                View Code
+              </a>
             </div>
           </div>
         </div>
@@ -85,20 +88,24 @@ const Projects = () => {
               alt="Card image cap"
             />
             <div className="card-body">
-              <div className="d-flex justify-content-between">
-                <h5 className="card-title">StatStick Algorithm</h5>
-                <a
-                  href="https://github.com/leodube/statstick-ml"
-                  target="_blank"
-                  class="btn btn-primary"
-                >
-                  View Code
-                </a>
-              </div>
+              <h5 className="card-title">StatStick Algorithm</h5>
               <h6 className="card-subtitle mb-2 text-muted">
                 4th Year Capstone Project
               </h6>
-              <p className="card-text">A machine learning algorithm that takes raw sensor data and predicts hockey stick actions using dynamic time warping and fuzzy clustering. It was built using Python.</p>
+              <p className="card-text">
+                A machine learning algorithm that takes raw sensor data and
+                predicts hockey stick actions using dynamic time warping and
+                fuzzy clustering. Built using Python.
+              </p>
+            </div>
+            <div className="d-flex mt-auto justify-content-center mb-3">
+              <a
+                href="https://github.com/leodube/statstick-ml"
+                target="_blank"
+                class="btn btn-primary"
+              >
+                View Code
+              </a>
             </div>
           </div>
         </div>
