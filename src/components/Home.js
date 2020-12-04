@@ -6,7 +6,7 @@ import linkedinIcon from "/public/images/linkedin.svg";
 const Home = () => {
   return (
     <div className="row justify-content-center">
-      <div className="col-8">
+      <div className="col-11 col-md-8">
         <img
           id="profile-pic"
           src={profilePic}
