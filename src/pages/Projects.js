@@ -3,6 +3,7 @@ import otisImg from "/public/images/otis.png";
 import statstickImg from "/public/images/statstick.png";
 import statstickMLImg from "/public/images/statstickML.png";
 import websiteImg from "/public/images/website.png";
+import skedoodleImg from "/public/images/skedoodle.png";
 
 const Projects = () => {
   return (
@@ -23,14 +24,52 @@ const Projects = () => {
                 and Bootstrap.
               </p>
             </div>
-            <div className="d-flex mt-auto justify-content-center mb-3">
-              <a
-                href="https://github.com/leodube/portfolio"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                View Code
-              </a>
+            <div className="row d-flex mt-auto justify-content-center mb-3">
+              <div className="col-3">
+                <a
+                  href="https://github.com/leodube/portfolio"
+                  target="_blank"
+                  class="btn btn-primary btn-block"
+                >
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-lg-6 d-flex">
+          <div className="card shadow-sm mb-3">
+            <img
+              className="card-img-top border-bottom"
+              src={skedoodleImg}
+              alt="Card image cap"
+            />
+            <div className="card-body">
+              <h5 className="card-title">Skedoodle</h5>
+              <p className="card-text mt-3">
+                Generate random doodle ideas! Built using MongoDB, Express,
+                React and Node.js.
+              </p>
+            </div>
+            <div className="row d-flex mt-auto mb-3 justify-content-center">
+              <div className="col-3">
+                <a
+                  href="https://www.skedoodle.art"
+                  target="_blank"
+                  class="btn btn-primary btn-block"
+                >
+                  Website
+                </a>
+              </div>
+              <div className="col-3">
+                <a
+                  href="https://github.com/leodube/skedoodle"
+                  target="_blank"
+                  class="btn btn-primary btn-block"
+                >
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -45,10 +84,12 @@ const Projects = () => {
                 mill operators. Built using ASP.NET.
               </p>
             </div>
-            <div className="d-flex mt-auto justify-content-center mb-3">
-              <a href="#" class="btn btn-secondary disabled">
-                Private Code
-              </a>
+            <div className="row d-flex mt-auto justify-content-center mb-3">
+              <div className="col-4">
+                <a href="#" class="btn btn-secondary btn-block disabled">
+                  Private Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -69,14 +110,16 @@ const Projects = () => {
                 an API endpoint. Built using Swift.
               </p>
             </div>
-            <div className="d-flex mt-auto justify-content-center mb-3">
-              <a
-                href="https://github.com/leodube/statstick-app"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                View Code
-              </a>
+            <div className="row d-flex mt-auto justify-content-center mb-3">
+              <div className="col-3">
+                <a
+                  href="https://github.com/leodube/statstick-app"
+                  target="_blank"
+                  class="btn btn-primary btn-block"
+                >
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -98,14 +141,16 @@ const Projects = () => {
                 fuzzy clustering. Built using Python.
               </p>
             </div>
-            <div className="d-flex mt-auto justify-content-center mb-3">
-              <a
-                href="https://github.com/leodube/statstick-ml"
-                target="_blank"
-                class="btn btn-primary"
-              >
-                View Code
-              </a>
+            <div className="row d-flex mt-auto justify-content-center mb-3">
+              <div className="col-3">
+                <a
+                  href="https://github.com/leodube/statstick-ml"
+                  target="_blank"
+                  class="btn btn-primary btn-block"
+                >
+                  View Code
+                </a>
+              </div>
             </div>
           </div>
         </div>
