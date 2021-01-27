@@ -25,7 +25,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-3">
+              <div className="col-4">
                 <a
                   href="https://github.com/leodube/portfolio"
                   target="_blank"
@@ -52,7 +52,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="row d-flex mt-auto mb-3 justify-content-center">
-              <div className="col-3">
+              <div className="col-4">
                 <a
                   href="https://www.skedoodle.art"
                   target="_blank"
@@ -61,7 +61,7 @@ const Projects = () => {
                   Website
                 </a>
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <a
                   href="https://github.com/leodube/skedoodle"
                   target="_blank"
@@ -111,7 +111,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-3">
+              <div className="col-4">
                 <a
                   href="https://github.com/leodube/statstick-app"
                   target="_blank"
@@ -142,7 +142,7 @@ const Projects = () => {
               </p>
             </div>
             <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-3">
+              <div className="col-4">
                 <a
                   href="https://github.com/leodube/statstick-ml"
                   target="_blank"
