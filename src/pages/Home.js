@@ -1,7 +1,7 @@
 import React from "react";
-import profilePic from "/public/images/me.jpeg";
-import githubIcon from "/public/images/github.svg";
-import linkedinIcon from "/public/images/linkedin.svg";
+import profilePic from "../images/me.jpeg";
+import githubIcon from "../images/github.svg";
+import linkedinIcon from "../images/linkedin.svg";
 
 const Home = () => {
   return (

@@ -1,9 +1,10 @@
 import React from "react";
-import otisImg from "/public/images/otis.png";
-import statstickImg from "/public/images/statstick.png";
-import statstickMLImg from "/public/images/statstickML.png";
-import websiteImg from "/public/images/website.png";
-import skedoodleImg from "/public/images/skedoodle.png";
+import { CardOneButton, CardTwoButtons } from "../components";
+import otisImg from "../images/otis.png";
+import statstickImg from "../images/statstick.png";
+import statstickMLImg from "../images/statstickML.png";
+import websiteImg from "../images/website.png";
+import skedoodleImg from "../images/skedoodle.png";
 
 const Projects = () => {
   return (
@@ -11,148 +12,55 @@ const Projects = () => {
       <h1 className="text-left mt-3 mb-5">Projects</h1>
       <div className="row justify-content-start">
         <div className="col-lg-6 d-flex">
-          <div className="card shadow-sm mb-3">
-            <img
-              className="card-img-top border-bottom"
-              src={websiteImg}
-              alt="Card image cap"
-            />
-            <div className="card-body">
-              <h5 className="card-title">This website!</h5>
-              <p className="card-text mt-3">
-                This responsive single-page application was built using React
-                and Bootstrap.
-              </p>
-            </div>
-            <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-5 col-sm-4">
-                <a
-                  href="https://github.com/leodube/portfolio"
-                  target="_blank"
-                  class="btn btn-primary btn-block"
-                >
-                  View Code
-                </a>
-              </div>
-            </div>
-          </div>
+          <CardOneButton
+            title="This website!"
+            image={websiteImg}
+            description="This responsive single-page application was built using React and Bootstrap."
+            btnText="View Code"
+            btnLink="https://github.com/leodube/portfolio"
+          />
         </div>
         <div className="col-lg-6 d-flex">
-          <div className="card shadow-sm mb-3">
-            <img
-              className="card-img-top border-bottom"
-              src={skedoodleImg}
-              alt="Card image cap"
-            />
-            <div className="card-body">
-              <h5 className="card-title">Skedoodle</h5>
-              <p className="card-text mt-3">
-                Generate random doodle ideas! Built using MongoDB, Express,
-                React and Node.js.
-              </p>
-            </div>
-            <div className="row d-flex mt-auto mb-3 justify-content-center">
-              <div className="col-5 col-sm-4">
-                <a
-                  href="https://www.skedoodle.art"
-                  target="_blank"
-                  class="btn btn-primary btn-block"
-                >
-                  Website
-                </a>
-              </div>
-              <div className="col-5 col-sm-4">
-                <a
-                  href="https://github.com/leodube/skedoodle"
-                  target="_blank"
-                  class="btn btn-primary btn-block"
-                >
-                  View Code
-                </a>
-              </div>
-            </div>
-          </div>
+          <CardTwoButtons
+            title="Skedoodle"
+            image={skedoodleImg}
+            description="Generate random doodle ideas! Built using MongoDB, Express, React and Node.js."
+            leftBtnText="Website"
+            leftBtnLink="https://www.skedoodle.art"
+            rightBtnText="View Code"
+            rightBtnLink="https://github.com/leodube/skedoodle"
+          />
         </div>
         <div className="col-lg-6 d-flex">
-          <div className="card shadow-sm mb-3">
-            <img className="card-img-top" src={otisImg} alt="Card image cap" />
-            <div className="card-body">
-              <h5 className="card-title">OTIS Web Application</h5>
-              <h6 className="card-subtitle mb-2 text-muted">At Resolute FP</h6>
-              <p className="card-text">
-                An intranet-based document management system for pulp and paper
-                mill operators. Built using ASP.NET.
-              </p>
-            </div>
-            <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-5 col-sm-4">
-                <a href="#" class="btn btn-secondary btn-block disabled">
-                  Private Code
-                </a>
-              </div>
-            </div>
-          </div>
+          <CardOneButton
+            title="OTIS Web Application"
+            subtitle="At Resolute FP"
+            image={otisImg}
+            description="An intranet-based document management system for pulp and paper mill operators. Built using ASP.NET."
+            btnText="Private Code"
+            btnLink="#"
+            btnDeactivate
+          />
         </div>
         <div className="col-lg-6 d-flex">
-          <div className="card shadow-sm mb-3">
-            <img
-              className="card-img-top border-bottom"
-              src={statstickImg}
-              alt="Card image cap"
-            />
-            <div className="card-body">
-              <h5 className="card-title">StatStick iOS Application</h5>
-              <h6 className="card-subtitle mb-2 text-muted">
-                4th Year Capstone Project
-              </h6>
-              <p className="card-text">
-                An iPad application that displays hockey stick action data from
-                an API endpoint. Built using Swift.
-              </p>
-            </div>
-            <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-5 col-sm-4">
-                <a
-                  href="https://github.com/leodube/statstick-app"
-                  target="_blank"
-                  class="btn btn-primary btn-block"
-                >
-                  View Code
-                </a>
-              </div>
-            </div>
-          </div>
+          <CardOneButton
+            title="StatStick iOS Application"
+            image={statstickImg}
+            subtitle="4th Year Capstone Project"
+            description="An iPad application that displays hockey stick action data from an API endpoint. Built using Swift."
+            btnText="View Code"
+            btnLink="https://github.com/leodube/statstick-app"
+          />
         </div>
         <div className="col-lg-6 d-flex">
-          <div className="card shadow-sm mb-3">
-            <img
-              className="card-img-top border-bottom"
-              src={statstickMLImg}
-              alt="Card image cap"
-            />
-            <div className="card-body">
-              <h5 className="card-title">StatStick Algorithm</h5>
-              <h6 className="card-subtitle mb-2 text-muted">
-                4th Year Capstone Project
-              </h6>
-              <p className="card-text">
-                A machine learning algorithm that takes raw sensor data and
-                predicts hockey stick actions using dynamic time warping and
-                fuzzy clustering. Built using Python.
-              </p>
-            </div>
-            <div className="row d-flex mt-auto justify-content-center mb-3">
-              <div className="col-5 col-sm-4">
-                <a
-                  href="https://github.com/leodube/statstick-ml"
-                  target="_blank"
-                  class="btn btn-primary btn-block"
-                >
-                  View Code
-                </a>
-              </div>
-            </div>
-          </div>
+          <CardOneButton
+            title="StatStick Algorithm"
+            image={statstickMLImg}
+            subtitle="4th Year Capstone Project"
+            description="A machine learning algorithm that takes raw sensor data and predicts hockey stick actions using dynamic time warping and fuzzy clustering. Built using Python."
+            btnText="View Code"
+            btnLink="https://github.com/leodube/statstick-ml"
+          />
         </div>
       </div>
     </>
