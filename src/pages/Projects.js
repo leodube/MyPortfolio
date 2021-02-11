@@ -1,5 +1,5 @@
 import React from "react";
-import { CardOneButton, CardTwoButtons } from "../components";
+import { Card } from "../components";
 import otisImg from "../images/otis.png";
 import statstickImg from "../images/statstick.png";
 import statstickMLImg from "../images/statstickML.png";
@@ -12,7 +12,7 @@ const Projects = () => {
       <h1 className="text-left mt-3 mb-5">Projects</h1>
       <div className="row justify-content-start">
         <div className="col-lg-6 d-flex">
-          <CardOneButton
+          <Card
             title="This website!"
             image={websiteImg}
             description="This responsive single-page application was built using React and Bootstrap."
@@ -21,10 +21,11 @@ const Projects = () => {
           />
         </div>
         <div className="col-lg-6 d-flex">
-          <CardTwoButtons
+          <Card
             title="Skedoodle"
             image={skedoodleImg}
             description="Generate random doodle ideas! Built using MongoDB, Express, React and Node.js."
+            twoBtns
             leftBtnText="Website"
             leftBtnLink="https://www.skedoodle.art"
             rightBtnText="View Code"
@@ -32,7 +33,7 @@ const Projects = () => {
           />
         </div>
         <div className="col-lg-6 d-flex">
-          <CardOneButton
+          <Card
             title="OTIS Web Application"
             subtitle="At Resolute FP"
             image={otisImg}
@@ -43,7 +44,7 @@ const Projects = () => {
           />
         </div>
         <div className="col-lg-6 d-flex">
-          <CardOneButton
+          <Card
             title="StatStick iOS Application"
             image={statstickImg}
             subtitle="4th Year Capstone Project"
@@ -53,7 +54,7 @@ const Projects = () => {
           />
         </div>
         <div className="col-lg-6 d-flex">
-          <CardOneButton
+          <Card
             title="StatStick Algorithm"
             image={statstickMLImg}
             subtitle="4th Year Capstone Project"
