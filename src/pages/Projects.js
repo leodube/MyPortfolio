@@ -17,7 +17,7 @@ const Projects = () => {
             title="This website!"
             subtitle="Personal project"
             image={websiteImg}
-            description="This responsive single-page application was built using React and Bootstrap."
+            description="A responsive single-page application that showcases my projects. Built using React and Bootstrap."
             btnText="View Code"
             btnLink="https://github.com/leodube/portfolio"
           />
@@ -27,7 +27,7 @@ const Projects = () => {
             title="Skedoodle"
             subtitle="Personal project"
             image={skedoodleImg}
-            description="Generate random doodle ideas! Built using MongoDB, Express, React and Node.js."
+            description="A website that generates random doodle ideas. Built using MongoDB, Express, React and Node.js."
             twoBtns
             leftBtnText="Website"
             leftBtnLink="https://www.skedoodle.art"
