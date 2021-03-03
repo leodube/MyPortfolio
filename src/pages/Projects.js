@@ -31,9 +31,9 @@ const Projects = () => {
             description="A website that predicts which NHL team will get the next powerplay opportunity. Built using Flask, React and Bootstrap."
             twoBtns
             leftBtnText="Website"
-            leftBtnLink="https://www.skedoodle.art"
+            leftBtnLink="https://www.penaltybias.com/"
             rightBtnText="View Code"
-            rightBtnLink="https://github.com/leodube/skedoodle"
+            rightBtnLink="https://github.com/leodube/penalty-bias"
           />
         </div>
         <div className="col-lg-6 d-flex">
@@ -44,9 +44,9 @@ const Projects = () => {
             description="A website that generates random doodle ideas. Built using MERN stack and Bootstrap."
             twoBtns
             leftBtnText="Website"
-            leftBtnLink="https://www.penaltybias.com/"
+            leftBtnLink="https://www.skedoodle.art"
             rightBtnText="View Code"
-            rightBtnLink="https://github.com/leodube/penalty-bias"
+            rightBtnLink="https://github.com/leodube/skedoodle"
           />
         </div>
         <div className="col-lg-6 d-flex">
