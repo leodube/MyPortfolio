@@ -5,6 +5,7 @@ import statstickImg from "../images/statstick.png";
 import statstickMLImg from "../images/statstickML.png";
 import websiteImg from "../images/website.png";
 import skedoodleImg from "../images/skedoodle.png";
+import penaltybiasImg from "../images/penaltybias.png"
 
 const Projects = () => {
 
@@ -24,15 +25,28 @@ const Projects = () => {
         </div>
         <div className="col-lg-6 d-flex">
           <Card
-            title="Skedoodle"
+            title="PenaltyBias"
             subtitle="Personal project"
-            image={skedoodleImg}
-            description="A website that generates random doodle ideas. Built using MongoDB, Express, React and Node.js."
+            image={penaltybiasImg}
+            description="A website that predicts which NHL team will get the next powerplay opportunity. Built using Flask, React and Bootstrap."
             twoBtns
             leftBtnText="Website"
             leftBtnLink="https://www.skedoodle.art"
             rightBtnText="View Code"
             rightBtnLink="https://github.com/leodube/skedoodle"
+          />
+        </div>
+        <div className="col-lg-6 d-flex">
+          <Card
+            title="Skedoodle"
+            subtitle="Personal project"
+            image={skedoodleImg}
+            description="A website that generates random doodle ideas. Built using MERN stack and Bootstrap."
+            twoBtns
+            leftBtnText="Website"
+            leftBtnLink="https://www.penaltybias.com/"
+            rightBtnText="View Code"
+            rightBtnLink="https://github.com/leodube/penalty-bias"
           />
         </div>
         <div className="col-lg-6 d-flex">
