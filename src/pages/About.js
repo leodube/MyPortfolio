@@ -27,7 +27,7 @@ const About = () => {
             </a>
           </li>
           <li>
-            <a href="mailto:leo.s.dube@gmail.com">Email</a>
+            <a href="mailto:contact@leodube.ca">Email</a>
           </li>
         </ul>
       </div>
