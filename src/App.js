@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { hot } from "react-hot-loader";
 
 import { Navbar } from "./components";
-import { Home, About, Projects } from "./pages";
+import { Home, About, Projects, Work } from "./pages";
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/work" component={Work} />
             <Route exact path="/projects" component={Projects} />
           </Switch>
         </div>

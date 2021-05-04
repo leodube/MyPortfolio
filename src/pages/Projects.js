@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "../components";
-import otisImg from "../images/otis.png";
 import statstickImg from "../images/statstick.png";
 import statstickMLImg from "../images/statstickML.png";
 import websiteImg from "../images/website.png";
@@ -47,17 +46,6 @@ const Projects = () => {
             leftBtnLink="https://www.skedoodle.art"
             rightBtnText="View Code"
             rightBtnLink="https://github.com/leodube/skedoodle"
-          />
-        </div>
-        <div className="col-lg-6 d-flex">
-          <Card
-            title="OTIS Web Application"
-            subtitle="As Software Developer at Resolute FP"
-            image={otisImg}
-            description="An intranet-based document management system for pulp and paper mill operators. Built using ASP.NET."
-            btnText="Private Code"
-            btnLink="#"
-            btnDeactivate
           />
         </div>
         <div className="col-lg-6 d-flex">

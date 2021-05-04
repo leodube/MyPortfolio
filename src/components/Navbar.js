@@ -16,18 +16,23 @@ const Navbar = () => {
         type="button"
         data-toggle="collapse"
         data-target="#navbar"
-        aria-controls="navbar" 
-        aria-expanded={!isNavCollapsed ? true : false} 
+        aria-controls="navbar"
+        aria-expanded={!isNavCollapsed ? true : false}
         aria-label="Toggle navigation"
         onClick={handleNavCollapse}
       >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`}>
+      <div className={`${isNavCollapsed ? "collapse" : ""} navbar-collapse`}>
         <ul className="navbar-nav ml-auto">
           <li className="nav-item px-3">
             <Link to="/" className="nav-link">
               Home
+            </Link>
+          </li>
+          <li className="nav-item px-3">
+            <Link to="/work" className="nav-link">
+              Work
             </Link>
           </li>
           <li className="nav-item px-3">
