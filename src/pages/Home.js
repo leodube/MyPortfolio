@@ -19,7 +19,9 @@ const Home = () => {
         <h4 className="text-center text-muted font-weight-light">
           Computer Engineer and Aspiring Adventurer
         </h4>
-        <p className="text-center text-muted mt-4">I do full stack development, responsive web design, and more...</p>
+        <p className="text-center text-muted mt-4">
+          I do full stack development, responsive web design, and more...
+        </p>
         <div className="row pt-3 justify-content-center">
           <div className="col-lg-4 mb-1">
             <a

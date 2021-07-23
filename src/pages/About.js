@@ -6,10 +6,10 @@ const About = () => {
       <div className="col-11 col-md-8 mb-3">
         <h1 className="mt-3 mb-4">About Leo Dubé</h1>
         <p>
-          I'm a computer engineering graduate from Queen's University. Originally from Thunder Bay, I'm currently living in Kingston. My work experience includes 16 months in an IT position at Resolute Forest Products. Right now I help small businesses tranform their digital platforms as a web designer for the DMS Future Proof program. I also do freelance work on the side.
+          I'm a computer engineering graduate from Queen's University who is currently based in Thunder Bay, Ontario. I have 2 years of professional web development experience. At Resolute Forest Products I build a document management application that is used by nearly 100 employees. At Invest Ottawa I helped several small businesses tranform their digital platforms as part of the DMS Future Proof program. I am currently looking for fun web development or software engineering opportunities in North America.
         </p>
         <p>
-          This past summer I disappeared into the bushes of Northwestern Ontario and planted over 74,000 trees.
+          Over the past two summers I have disappeared into the bushes of Northwestern Ontario and Northern Alberta and planted 138,845 trees.
         </p>
         <p className="p text-muted my-4">
           When I'm not coding, I like to go exploring.
