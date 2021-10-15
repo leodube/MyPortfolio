@@ -12,6 +12,20 @@ const Work = () => {
   return (
     <>
       <h1 className="text-left mt-3 mb-5">Work</h1>
+      <h3 className="text-left mt-5 mb-3">Resolute Forest Products</h3>
+      <h5 className="text-left text-muted mb-4">Software Engineer</h5>
+      <div className="row justify-content-start">
+        <div className="col-lg-6 d-flex">
+          <Card
+            title="OTIS Application"
+            image={otisImg}
+            description="A document management application for pulp and paper mill operators. Built using Electron, React, and Material-UI."
+            btnText="Private Code"
+            btnLink="#"
+            btnDeactivate
+          />
+        </div>
+      </div>
       <h3 className="text-left mt-5">Invest Ottawa</h3>
       <h5 className="text-left text-muted mb-4">Web Developer</h5>
       <div className="row justify-content-start">
@@ -63,20 +77,6 @@ const Work = () => {
             description="Major UI changes implemented and added custom e-commerce functionality."
             btnText="View Website"
             btnLink="https://www.belmonteboystrophyshop.com/"
-          />
-        </div>
-      </div>
-      <h3 className="text-left mt-5 mb-3">Resolute Forest Products</h3>
-      <h5 className="text-left text-muted mb-4">Software Engineer</h5>
-      <div className="row justify-content-start">
-        <div className="col-lg-6 d-flex">
-          <Card
-            title="OTIS Application"
-            image={otisImg}
-            description="A document management application for pulp and paper mill operators. Built using Electron, React, and Material-UI."
-            btnText="Private Code"
-            btnLink="#"
-            btnDeactivate
           />
         </div>
       </div>
