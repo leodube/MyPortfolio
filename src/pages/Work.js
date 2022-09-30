@@ -31,16 +31,6 @@ const Work = () => {
       <div className="row justify-content-start">
         <div className="col-lg-6 d-flex">
           <Card
-            title="Funny Duck Farms"
-            image={fdfImg}
-            subtitle="On Local Line Sites"
-            description="Major UI changes implemented. Added integration with Payhip."
-            btnText="View Website"
-            btnLink="https://www.funnyduckfarms.com/"
-          />
-        </div>
-        <div className="col-lg-6 d-flex">
-          <Card
             title="The Clean Divorce"
             image={tcdImg}
             subtitle="On Wix"
