@@ -7,9 +7,9 @@ const About = () => {
         <h1 className="mt-3 mb-4">About Leo Dubé</h1>
         <p>
           I'm a computer engineering graduate from Queen's University who is
-          currently based in Victoria, British Columbia. I have 3+ years of
+          currently based in Victoria, British Columbia. I have 4+ years of
           professional development experience.{" "}
-          <a href="https://www.linkedin.com/in/leo-dube/" target="_blank">
+          <a href="https://www.linkedin.com/in/leodube/" target="_blank">
             Click here to learn more about my work experience.
           </a>{" "}
           I am currently looking for fun web development or software engineering
