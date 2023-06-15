@@ -6,7 +6,7 @@ const About = () => {
       <div className="col-11 col-md-8 mb-3">
         <h1 className="mt-3 mb-4">About Leo Dubé</h1>
         <p>
-          I'm a computer engineering graduate from Queen's University who is
+          🙋‍♂️ I'm a computer engineering graduate from Queen's University who is
           currently based in Victoria, British Columbia. I have 4+ years of
           professional development experience.{" "}
           <a href="https://www.linkedin.com/in/leodube/" target="_blank">
@@ -16,11 +16,10 @@ const About = () => {
           opportunities in North America.
         </p>
         <p>
-          Over the past three summers I have disappeared into the bushes of
-          Northwestern Ontario and Northern Alberta and planted 236,860 trees.
+          🌲 Fun fact about me: I have planted over a quarter million trees.
         </p>
         <p className="p text-muted my-4">
-          When I'm not coding, I like to go exploring.
+          📍 When I'm not coding, I like to go exploring.
         </p>
         <h4 className="h4 mt-1">Links</h4>
         <ul>
