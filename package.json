@@ -24,7 +24,7 @@
     "html-webpack-plugin": "^4.5.0",
     "image-minimizer-webpack-plugin": "^1.0.0",
     "imagemin-jpegtran": "^7.0.0",
-    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-pngquant": "^9.0.1",
     "postcss-loader": "^4.1.0",
