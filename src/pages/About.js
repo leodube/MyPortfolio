@@ -7,17 +7,12 @@ const About = () => {
         <h1 className="mt-3 mb-4">About Leo Dubé</h1>
         <p>
           🙋‍♂️ I'm a computer engineering graduate from Queen's University who is
-          currently based in Victoria, British Columbia. I have 4+ years of
-          professional development experience.{" "}
-          <a href="https://www.linkedin.com/in/leodube/" target="_blank">
-            Click here to learn more about my work experience.
-          </a>{" "}
-          I am currently looking for fun web development or software engineering
-          opportunities in North America.
+          currently based in Victoria, British Columbia. I have 5+ years of
+          professional development experience. I am currently looking for fun
+          web development or software engineering opportunities in North
+          America.
         </p>
-        <p>
-          🌲 Fun fact about me: I have planted over a quarter million trees.
-        </p>
+        <p>🌲 Fun fact about me: I have planted over a 450,000 trees.</p>
         <p className="p text-muted my-4">
           📍 When I'm not coding, I like to go exploring.
         </p>
