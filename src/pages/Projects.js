@@ -5,6 +5,7 @@ import statstickMLImg from "../images/statstickML.png";
 import websiteImg from "../images/website.png";
 import skedoodleImg from "../images/skedoodle.png";
 import penaltybiasImg from "../images/penaltybias.png"
+import nhldashImg from "../images/nhldash.png"
 
 const Projects = () => {
 
@@ -33,6 +34,19 @@ const Projects = () => {
             leftBtnLink="https://www.penaltybias.com/"
             rightBtnText="View Code"
             rightBtnLink="https://github.com/leodube/penalty-bias"
+          />
+        </div>
+        <div className="col-lg-6 d-flex">
+          <Card
+            title="NHLDash"
+            subtitle="Personal project"
+            image={nhldashImg}
+            description="A website that lists NHL rosters and player statistics. Built using Flask, React and Material UI."
+            twoBtns
+            leftBtnText="Website"
+            leftBtnLink="https://nhldash.com/"
+            rightBtnText="View Code"
+            rightBtnLink="https://github.com/leodube/NHLDash"
           />
         </div>
         <div className="col-lg-6 d-flex">
